@@ -1,0 +1,7 @@
+PgAdmin UI: localhost:8081
+Airflow UI: localhost:8080
+DashBoard: localhost:8055
+
+still need to trigger DAG manually in airflow UI 
+
+we have 2 csv files in airflow folder because we perform the ‘extraction of additional data task’
