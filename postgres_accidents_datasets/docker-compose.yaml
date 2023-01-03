@@ -23,4 +23,4 @@ services:
       - airflow
 networks:
   airflow:
-      name: airflow_default
+      name: airflow_milestone3_default
