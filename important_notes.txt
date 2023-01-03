@@ -1,0 +1,21 @@
+run the initialize.sh script that will make sure to give the correct permissions
+it has to be run in super user mode as it changes permission
+sudo ./initialize.sh
+
+run the "docker-compose up -d" of postgres first in:
+ ./postgres_accidents_datasets
+run the "docker-compose up -d" of airflow after:
+ ./airflow
+
+Here you can see the UI interfaces:
+PgAdmin UI: localhost:8081
+Airflow UI: localhost:8080
+DashBoard: localhost:8055
+
+if the DAG is not triggered, it should be triggered manually in the web interface at:
+ Airflow UI: localhost:8080
+
+note:
+ - we have 2 csv files in ./airflow/data folder because we perform the ‘extraction of additional data task’.
+ - changing airflow directory name to airflow_milestone3 poses problems in the airflow compose file related to the python version for some reason,
+   therefore we opted to not rename the folder
